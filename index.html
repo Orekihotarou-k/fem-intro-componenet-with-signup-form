@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="wrapper flex">
+    <div class="signup-container flex">
+      <div class="signup-col">
+        <h1 class="title"> Learn to code by watching others</h1>
+        <p class="desc">  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+      </div>
+
+      <div class="signup-col">
+        <p class="trial"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+      
+
+      <form class="signup-form" novalidate>
+        <div class="input-item">
+          <label for="firstName">
+          <input type="text" id="firstName" aria-label="First Name" placeholder="First Name">
+          <img src="images/icon-error.svg" alt="" aria-hidden="true" class="errorIcon">
+          <small>First name cannot be empty</small>
+          </label>
+        </div>
+
+        <div class="input-item">
+          <label for="lastName">
+          <input type="text" id="lastName" aria-label="Last Name" placeholder="Last Name">
+          <img src="images/icon-error.svg" alt="" aria-hidden="true" class="errorIcon">
+          <small>First name cannot be empty</small>
+          </label>
+        </div>
+
+        <div class="input-item">
+          <label for="emailAddress">
+          <input type="email" id="emailAddress" aria-label="Email Address" placeholder="Email Address">
+          <img src="images/icon-error.svg" alt="" aria-hidden="true" class="errorIcon emailErrorIcon">
+          <small class="emailError">Looks like this is not an email</small>
+          </label>
+        </div>
+
+        <div class="input-item">
+          <label for="password">
+          <input type="password" id="password" aria-label="Password" placeholder="Password">
+          <img src="images/icon-error.svg" alt="" aria-hidden="true" class="errorIcon">
+          <small>Password cannot be empty</small>
+          </label>
+        </div>
+
+        <button class="submit-button">Claim your free trial</button>
+
+        <p class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+
+      </form>
+    </div>
+    </div>
+  </main>
+ 
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Levis Bohse</a>.
+    </p>
+  </footer>
+</body>
+</html>
